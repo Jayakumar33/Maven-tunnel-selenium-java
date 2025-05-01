@@ -16,3 +16,7 @@
         </classes>
     </test>
 </suite>
+
+<!--
+mvn test -DsuiteXmlFile=MavenSingle.xml
+-->

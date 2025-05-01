@@ -42,6 +42,10 @@ public class MavenSingle implements IExecutionListener {
     options.put("user", username);
     options.put("key", access_key);
     options.put("tunnelName", "MavenSingle");
+    options.put("verbose", "--verbose");
+//    options.put("logFile", "--logFile");
+    options.put("logFile", "/Users/jayak/.jenkins/workspace/mavenTunnel/tunnel.log");
+
 
     // start tunnel
     t.start(options);
@@ -53,7 +57,7 @@ public class MavenSingle implements IExecutionListener {
   @Test()
   public void testTunnel() throws Exception {
     // Check LocalHost on XAMPP
-    driver.get("http://localhost.lambdatest.com");
+    driver.get("http://localhost:5500/index.html");
     // Let's check that the item we added is added in the list.
     driver.get("https://google.com");
   }
