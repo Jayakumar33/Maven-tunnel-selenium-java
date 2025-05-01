@@ -43,8 +43,8 @@ public class MavenSingle implements IExecutionListener {
     options.put("key", access_key);
     options.put("tunnelName", "MavenSingle");
     options.put("verbose", "--verbose");
-//    options.put("logFile", "--logFile");
-    options.put("logFile", "/Users/jayak/.jenkins/workspace/mavenTunnel/tunnel.log");
+    options.put("logFile", "--logFile");
+//    options.put("logFile", "/Users/jayak/.jenkins/workspace/mavenTunnel/tunnel.log");
 
 
     // start tunnel
